@@ -1,0 +1,55 @@
+
+.absa-cards-wrapper .absa-cards > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox */
+  flex-direction: row; /* Ensure elements are side by side */
+  justify-content: space-between; /* Space between the cards */
+}
+
+.absa-cards-wrapper .absa-cards > ul > li {
+  flex: 1; /* Allow cards to take equal space */
+  margin: 0 10px; /* Horizontal spacing between cards */
+  border: none; /* Remove border */
+  background-color: transparent; /* Set background to transparent */
+  display: flex;
+  flex-direction: column; /* Ensure image and body are stacked */
+  align-items: flex-start; /* Align items to the start */
+}
+
+.absa-cards-wrapper .absa-cards .absa-cards-card-body {
+  margin-top: 10px; /* Space between image and body */
+}
+
+.absa-cards-wrapper .absa-cards .absa-cards-card-image {
+  width: 100%; /* Full width image */
+  line-height: 0;
+  display: block; /* Ensure image container is displayed */
+}
+
+.absa-cards-wrapper .absa-cards > ul > li img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block; /* Ensure images are displayed */
+}
+
+.absa-cards-wrapper .absa-cards .absa-cards-card-body h5 {
+  font-weight: bold; /* Make the title bold */
+  margin: 10px 0 0 0; /* Adjust space around the title */
+}
+
+/* Button styling */
+.absa-cards-wrapper .absa-cards .absa-cards-card-body .button-container .button {
+  color: red; /* Change button text color to red */
+  background-color: transparent; /* Remove button background */
+  border: none; /* Remove button border */
+  text-decoration: none; /* Remove underline */
+  padding: 0; /* Remove padding */
+  margin-top: 5px; /* Reduce space above button */
+}
+
+.absa-cards-wrapper .absa-cards .absa-cards-card-body .button-container .button:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
